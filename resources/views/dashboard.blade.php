@@ -4,7 +4,10 @@
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card">
-            <div class="card-header">Dashboard</div>
+            <div class="card-header">
+                Dashboard
+                <a href="/listings/create" class="btn btn-success btn-xs float-right">Add listing</a>
+            </div>
 
             <div class="card-body">
                 @if (session('status'))

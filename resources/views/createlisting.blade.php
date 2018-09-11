@@ -14,6 +14,7 @@
 
                 {!! Form::open(['action' => 'ListingsController@store']) !!}
                     {{ Form::bsText('name', '', ['placeholder' => 'Company name']) }}
+                    {{ Form::bsText('website', '', ['placeholder' => 'Company website']) }}
                     {{ Form::bsText('email', '', ['placeholder' => 'Contact email']) }}
                     {{ Form::bsText('phone', '', ['placeholder' => 'Contact phone']) }}
                     {{ Form::bsText('address', '', ['placeholder' => 'Business Address']) }}
