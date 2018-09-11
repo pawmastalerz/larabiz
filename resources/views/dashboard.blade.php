@@ -34,7 +34,10 @@
                             </a>
                         </td>
                         <td>
-                            
+                            {!! Form::open(['action' => ['ListingsController@destroy', $listing->id], '', 'class' => 'float-right', 'onsubmit' => 'return confirm("Are you sure?")']) !!}
+                                {{ Form::hidden('_method', 'delete')}}
+                                {{ Form::bsSubmit('Delete', ['class' => 'btn btn-danger']) }}
+                            {!! Form::close() !!}
                         </td>
                     </tr>
                     @endforeach
