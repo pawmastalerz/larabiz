@@ -28,8 +28,14 @@
                     @foreach ($listings as $listing)
                     <tr>
                         <td>{{$listing->name}}</td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <a href="/listings/{{$listing->id}}/edit" class="btn btn-default float-right">
+                                Edit
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     @endforeach
                 </table>
